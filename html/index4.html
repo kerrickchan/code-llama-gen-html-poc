@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.indigo-pink.min.css">
+    <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+        
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 1em;
+            text-align: center;
+        }
+        
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: space-between;
+        }
+        
+        nav li {
+            margin-right: 2em;
+        }
+        
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            transition: color 0.2s ease;
+        }
+        
+        nav a:hover {
+            color: #ccc;
+        }
+        
+        main {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2em;
+        }
+        
+        section.portfolio {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2em;
+        }
+        
+        figure {
+            position: relative;
+            overflow: hidden;
+            margin: 0;
+            padding: 0;
+        }
+        
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        
+        figcaption {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background-color: rgba(0, 0, 0, 0.5);
+            color: #fff;
+            padding: 1em;
+            text-align: center;
+            opacity: 0;
+            transition: opacity 0.2s ease;
+        }
+        
+        figure:hover figcaption {
+            opacity: 1;
+        }
+        
+        footer {
+            background-color: #333;
+            color: #fff;
+            padding: 1em;
+            text-align: center;
+        }
+        
+        footer p {
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Portfolio</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="portfolio">
+            <h2>My Portfolio</h2>
+            <ul>
+                <li>
+                    <figure>
+                        <img src="image1.jpg" alt="Image 1">
+                        <figcaption>Image 1</figcaption>
+                    </figure>
+                </li>
+                <li>
+                    <figure>
+                        <img src="image2.jpg" alt="Image 2">
+                        <figcaption>Image 2</figcaption>
+                    </figure>
+                </li>
+                <li>
+                    <figure>
+                        <img src="image3.jpg" alt="Image 3">
+                        <figcaption>Image 3</figcaption>
+                    </figure>
+                </li>
+                <li>
+                    <figure>
+                        <img src="image4.jpg" alt="Image 4">
+                        <figcaption>Image 4</figcaption>
+                    </figure>
+                </li>
+            </ul>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2023 Your Name</p>
+    </footer>
+</body>
+</html>

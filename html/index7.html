@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Purple Tailwind CSS Portfolio</title>
+    <link rel="stylesheet" href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap">
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Inter', sans-serif;
+            line-height: 1.6;
+            background-color: #fafafa;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 2rem;
+        }
+        .card {
+            background-color: #fff;
+            padding: 2rem;
+            border-radius: 1rem;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        .card h2 {
+            font-size: 2rem;
+            margin-bottom: 1rem;
+        }
+        .card p {
+            font-size: 1.2rem;
+            margin-bottom: 2rem;
+        }
+        .card button {
+            background-color: #3498db;
+            color: #fff;
+            padding: 1rem 2rem;
+            border: none;
+            border-radius: 0.5rem;
+            cursor: pointer;
+            transition: background-color 0.2s ease-in-out;
+        }
+        .card button:hover {
+            background-color: #2980b9;
+        }
+        @media (max-width: 768px) {
+            .grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+        @media (max-width: 576px) {
+            .grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 class="text-center">Purple Tailwind CSS Portfolio</h1>
+        <div class="grid">
+            <div class="card">
+                <h2>Card 1</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus.</p>
+                <button>Button</button>
+            </div>
+            <div class="card">
+                <h2>Card 2</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus.</p>
+                <button>Button</button>
+            </div>
+            <div class="card">
+                <h2>Card 3</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus.</p>
+                <button>Button</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
